@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" class=" js no-touch csstransforms3d csstransitions">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+ 
+</head>
+
+<body>
+<canvas id="myCanvas" width="200" height="160"></canvas>
+<script>
+      var canvas = document.getElementById('myCanvas');
+      var context = canvas.getContext('2d');
+      var x = canvas.width / 2;
+      var y = canvas.height / 2;
+      var radius = 79;
+      var startAngle = 0.8 * Math.PI;
+      var endAngle = 2.2 * Math.PI;
+      var counterClockwise = false;
+
+      context.beginPath();
+      context.arc(x, y, radius, startAngle, endAngle, counterClockwise);
+      context.lineWidth = 7;
+
+      // line color
+     
+	 var grd = context.createRadialGradient(238, 50, 10, 238, 50, 300);
+      // light blue
+      grd.addColorStop(0, '#ffd900');
+      // dark blue
+      grd.addColorStop(1, '#ff7f00');
+      context.fillStyle = grd;
+      context.fill();
+    </script>
+     
+    <script>
+	
+     var canvas = document.getElementById('myCanvas');
+      var context = canvas.getContext('2d');
+      var x = canvas.width / 2;
+      var y = canvas.height / 2;
+      var radius = 70;
+      var startAngle = 0.77 * Math.PI;
+      var endAngle = 2.23 * Math.PI;
+      var counterClockwise = false;
+
+      context.beginPath();
+      context.arc(x, y, radius, startAngle, endAngle, counterClockwise);
+      context.lineWidth = 7;
+
+      // line color
+     
+	  context.fillStyle = 'white';
+      context.fill();
+	  context.lineWidth = 5;
+      context.strokeStyle = '#848283';
+      context.stroke();
+	  
+    </script>
+   
+   
+    <script>
+      var canvas = document.getElementById('myCanvas');
+      var context = canvas.getContext('2d');
+      var x = canvas.width / 2;
+      var y = canvas.height / 2 - 0.1;
+      var text = 'A.B';
+
+      context.font = '28pt ballpark';
+      context.textAlign = 'center';
+      context.fillStyle = '#ff8900';
+      context.fillText(text, x, y);
+
+      // get text metrics
+      var metrics = context.measureText(text);
+      var width = metrics.width;
+      context.font = '35pt ballpark';
+      context.textAlign = 'center';
+      context.fillStyle = '#ff6a00';
+      context.fillText( 'Limo', x, y + 40);
+	  context.textSpace='100';
+	 
+	  
+	  var metrics = context.measureText(text);
+      var width = metrics.width;
+      context.font = '30pt ballpark';
+      context.textAlign = 'center';
+      context.fillStyle = '#ff8100';
+      context.fillText( 'service', x, y + 68);
+    </script>
+</body>
+</html>
