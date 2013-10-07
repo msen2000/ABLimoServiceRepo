@@ -8,24 +8,12 @@
 	<classpathentry kind="lib" path="war/WEB-INF/lib/el-ri-1.0.jar"/>
 	<classpathentry kind="lib" path="war/WEB-INF/lib/jsf-api-2.1.7.jar"/>
 	<classpathentry kind="lib" path="war/WEB-INF/lib/jsf-impl-2.1.7.jar"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/JSF 2.0 (Apache Myfaces JSF Core-2.0 API 2.0.2)">
-		<attributes>
-			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
-			<attribute name="owner.project.facets" value="jst.jsf"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/JSTL">
-		<attributes>
-			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
-			<attribute name="owner.project.facets" value="jst.jsf"/>
-		</attributes>
-	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/JdbcDriver"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/JSF 2.0 (Mojarra 2.0.3-FCS)">
 		<attributes>
 			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
 			<attribute name="owner.project.facets" value="jst.jsf"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/JdbcDriver"/>
 	<classpathentry kind="output" path="war/WEB-INF/classes"/>
 </classpath>
