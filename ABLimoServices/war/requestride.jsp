@@ -21,8 +21,8 @@
 			<div class="content-primary">			
 	          <hr/>      
 	          <h3>Request for a Ride</h3>
-		      <h:form style="text-align:center;">
-		        <table align="left" cellpadding="4">
+		      <h:form>
+		        <table data-role="table" id="my-table" data-mode="reflow">
 		            <tr style="border-color:Blue; border-style:solid; border-width:1px;">
 		                <td align="left"><h:outputText value="Type Of Limo: " /></td>
 		                <td align="right"><h:inputText id="typeOfLimo"  value="#{RequestRideBean.requestVO.typeOfLimo}" />

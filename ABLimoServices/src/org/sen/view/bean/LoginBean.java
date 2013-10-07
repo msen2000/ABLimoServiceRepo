@@ -1,8 +1,10 @@
-    package org.sen.view.bean;
+package org.sen.view.bean;
 
 public class LoginBean {
     private String loginname;
-    private String password;
+    private String name;
+
+	private String password;
     private String errorMessage;
     
 
@@ -46,4 +48,12 @@ public class LoginBean {
     public String getErrorMessage() {
         return errorMessage;
     }
+    public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
 }
