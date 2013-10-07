@@ -9,7 +9,7 @@
 	<classpathentry kind="lib" path="war/WEB-INF/lib/jsf-api-2.1.7.jar"/>
 	<classpathentry kind="lib" path="war/WEB-INF/lib/jsf-impl-2.1.7.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/JdbcDriver"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/JSF 2.0 (Mojarra 2.0.3-FCS)">
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/JSF 2.2 (Mojarra 2.2.0)">
 		<attributes>
 			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
 			<attribute name="owner.project.facets" value="jst.jsf"/>
