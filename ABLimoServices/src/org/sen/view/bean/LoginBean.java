@@ -1,6 +1,13 @@
 package org.sen.view.bean;
 
-public class LoginBean {
+import java.io.Serializable;
+
+import javax.faces.bean.ManagedBean;
+import javax.faces.bean.SessionScoped;
+
+@ManagedBean
+@SessionScoped
+public class LoginBean implements Serializable {
     private String loginname;
     private String name;
 
@@ -11,6 +18,8 @@ public class LoginBean {
     public LoginBean() {
         super();
         errorMessage="";
+        name = "Senthil";
+        loginname = "Kumar";
     }
     
     public String getLoginname(){
