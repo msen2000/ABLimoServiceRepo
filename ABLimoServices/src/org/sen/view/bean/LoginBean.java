@@ -41,10 +41,13 @@ public class LoginBean implements Serializable {
     public String CheckValidUser() { 
         if(loginname.equals("admin") &&  password.equals("admin")){
 //            return "adminHome";
+        	System.out.println("CheckValidUser : valid user !");
+        	
             return "adminLanding";
         }
         else{
             //return "fail";
+        	System.out.println("CheckValidUser : NOT valid user !");
             errorMessage = "Login Failed. Plesase try again with adim/admin !!!";
             return "login";
         }

@@ -1,7 +1,27 @@
 <?xml version="1.0" encoding="ISO-8859-1" ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core">
 <body>
-<div style="width:100%;font-size:36px;line-height:48px;background-color:navy;color:white">My Facelet Application</div>
+	<div id="header" data-role="header" data-theme="b">
+		<h1 >AB Limo Services</h1>
+		<h:form id="cldf1">
+			<h:panelGroup layout="block"  style="text-align:right;">
+			   <h:commandLink action="home" title="sdsd" value="ContactUs"/>
+				&nbsp;&nbsp;&nbsp;&nbsp;
+				<h:commandLink action="home" title="sdsd" value="Logout"/>
+			</h:panelGroup>
+			<div>
+			   <img src="images/cropped-limos_wb-stripesfin23.jpg" alt="logo" height="128"/>      
+			</div> 
+			<h:panelGroup layout="block" style="text-align:right; height: 24px; vertical-align: middle;">
+			   <h:commandLink action="login" value="AdminLogin" id="cldf1fd" >
+			     <f:param name="pageId" value="1" />
+			   </h:commandLink>
+			</h:panelGroup>
+		</h:form>
+	</div>
 </body>
 </html>

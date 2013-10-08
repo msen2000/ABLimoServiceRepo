@@ -1,7 +1,13 @@
 package org.sen.view.bean;
 
-public class RequestVO {
-    public String ID;
+import java.io.Serializable;
+
+public class RequestVO implements Serializable{
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	public String ID;
     public String typeOfLimo;
     public String startDate;
     public String endDate;

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pageflow:Pageflow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf13812633756330" configfile="/ABLimoServices/WebContent/WEB-INF/faces-config.xml">
+  <nodes xsi:type="pageflow:PFPage" name="*" x="122" y="1522" id="pf138126507005918" referenceLink="//@navigationRule.0/@fromViewId|" outlinks="pf138126507005919 pf138126507005920 pf138126507005921 pf138126507005922 pf138126507005923 pf138126507005924 pf138126507005925 pf138127384003237" path="*"/>
+  <nodes xsi:type="pageflow:PFPage" name="home" x="338" y="178" id="pf138126507005927" referenceLink="//@navigationRule.0/@navigationCase.0/@toViewId|" inlinks="pf138126507005919" path="/home.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="requestride" x="338" y="562" id="pf138126507005928" referenceLink="//@navigationRule.0/@navigationCase.1/@toViewId|" inlinks="pf138126507005920" path="/requestride.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="adminHome" x="338" y="946" id="pf138126507005929" referenceLink="//@navigationRule.0/@navigationCase.2/@toViewId|" inlinks="pf138126507005921" path="/adminHome.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="login" x="338" y="1330" id="pf138126507005930" referenceLink="//@navigationRule.0/@navigationCase.3/@toViewId|" inlinks="pf138126507005922" path="/login.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="reqConfirm" x="338" y="1714" id="pf138126507005931" referenceLink="//@navigationRule.0/@navigationCase.4/@toViewId|" inlinks="pf138126507005923" path="/reqConfirm.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="confirmedReq" x="338" y="2098" id="pf138126507005932" referenceLink="//@navigationRule.0/@navigationCase.5/@toViewId|" inlinks="pf138126507005924" path="/confirmedReq.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="adminLanding.xhtml" x="338" y="2482" id="pf138126507005933" referenceLink="//@navigationRule.0/@navigationCase.6/@toViewId|" inlinks="pf138126507005925" path="/al.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="requestDetails" x="122" y="2386" id="pf138126507005934" referenceLink="//@navigationRule.0/@navigationCase.7/@toViewId|" path="/requestDetails.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="requestDetails.xhtml" x="338" y="2866" id="pf138127384003238" referenceLink="//@navigationRule.0/@navigationCase.7/@toViewId|" inlinks="pf138127384003237" path="/requestDetails.xhtml"/>
+  <links id="pf138126507005919" target="pf138126507005927" source="pf138126507005918" outcome="home"/>
+  <links id="pf138126507005920" target="pf138126507005928" source="pf138126507005918" outcome="request"/>
+  <links id="pf138126507005921" target="pf138126507005929" source="pf138126507005918" outcome="adminHome"/>
+  <links id="pf138126507005922" target="pf138126507005930" source="pf138126507005918" outcome="login"/>
+  <links id="pf138126507005923" target="pf138126507005931" source="pf138126507005918" outcome="reqConfirm"/>
+  <links id="pf138126507005924" target="pf138126507005932" source="pf138126507005918" outcome="confirmedReq"/>
+  <links id="pf138126507005925" target="pf138126507005933" source="pf138126507005918" outcome="adminLanding"/>
+  <links id="pf138127384003237" target="pf138127384003238" source="pf138126507005918" outcome="requestDetails"/>
+</pageflow:Pageflow>

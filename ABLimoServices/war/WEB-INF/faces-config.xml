@@ -1,10 +1,32 @@
-<?xml version="1.0" encoding="windows-1252"?>
+<?xml version="1.0" encoding="UTF-8"?>
+
 <faces-config
-    xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+    xmlns="http://java.sun.com/xml/ns/javaee"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_2.xsd"
-    version="2.2">
-  <navigation-rule>
+    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-facesconfig_2_0.xsd"
+    version="2.0">
+    <managed-bean>
+		<managed-bean-name>LoginBean</managed-bean-name>
+		<managed-bean-class>org.sen.view.bean.LoginBean</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+	</managed-bean>
+	  <managed-bean>
+	    <managed-bean-name>HomeBean</managed-bean-name>
+	    <managed-bean-class>org.sen.view.bean.HomeBean</managed-bean-class>
+	    <managed-bean-scope>request</managed-bean-scope>
+	  </managed-bean>
+	  <managed-bean>
+	    <managed-bean-name>RequestRideBean</managed-bean-name>
+	    <managed-bean-class>org.sen.view.bean.RequestRideBean</managed-bean-class>
+	    <managed-bean-scope>request</managed-bean-scope>
+	  </managed-bean>
+	  <managed-bean>
+	    <managed-bean-name>AdminBean</managed-bean-name>
+	    <managed-bean-class>org.sen.view.bean.AdminBean</managed-bean-class>
+	    <managed-bean-scope>session</managed-bean-scope>
+	  </managed-bean>
+	  	
+    <navigation-rule>
     <from-view-id>*</from-view-id>
     <navigation-case>
       <from-outcome>home</from-outcome>
@@ -16,11 +38,11 @@
     </navigation-case>
     <navigation-case>
       <from-outcome>adminHome</from-outcome>
-      <to-view-id>/adminHome.jsp</to-view-id>
+      <to-view-id>/adminHome.xhtml</to-view-id>
     </navigation-case>
     <navigation-case>
       <from-outcome>login</from-outcome>
-      <to-view-id>/login.jsp</to-view-id>
+      <to-view-id>/login.xhtml</to-view-id>
     </navigation-case>
     <navigation-case>
       <from-outcome>reqConfirm</from-outcome>
@@ -32,31 +54,12 @@
     </navigation-case>
     <navigation-case>
       <from-outcome>adminLanding</from-outcome>
-      <to-view-id>/adminLanding.jsp</to-view-id>
+      <to-view-id>/al.xhtml</to-view-id>
     </navigation-case>
     <navigation-case>
       <from-outcome>requestDetails</from-outcome>
-      <to-view-id>/requestDetails.jsp</to-view-id>
+      <to-view-id>/requestDetails.xhtml</to-view-id>
     </navigation-case>
   </navigation-rule>
-  <managed-bean>
-    <managed-bean-name>HomeBean</managed-bean-name>
-    <managed-bean-class>org.sen.view.bean.HomeBean</managed-bean-class>
-    <managed-bean-scope>request</managed-bean-scope>
-  </managed-bean>
-  <managed-bean>
-    <managed-bean-name>LoginBean</managed-bean-name>
-    <managed-bean-class>org.sen.view.bean.LoginBean</managed-bean-class>
-    <managed-bean-scope>session</managed-bean-scope>
-  </managed-bean>
-  <managed-bean>
-    <managed-bean-name>RequestRideBean</managed-bean-name>
-    <managed-bean-class>org.sen.view.bean.RequestRideBean</managed-bean-class>
-    <managed-bean-scope>request</managed-bean-scope>
-  </managed-bean>
-  <managed-bean>
-    <managed-bean-name>AdminBean</managed-bean-name>
-    <managed-bean-class>org.sen.view.bean.AdminBean</managed-bean-class>
-    <managed-bean-scope>request</managed-bean-scope>
-  </managed-bean>
+
 </faces-config>

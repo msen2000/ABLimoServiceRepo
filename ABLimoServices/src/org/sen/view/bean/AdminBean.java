@@ -1,8 +1,8 @@
 package org.sen.view.bean;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
-
 import java.util.Map;
 
 import javax.faces.context.FacesContext;
@@ -12,8 +12,12 @@ import org.sen.limo.domain.Request;
 import org.sen.limo.model.RequestDAO;
 
 
-public class AdminBean {
-    private List<RequestVO> requestVOs = new ArrayList<RequestVO>();
+public class AdminBean implements Serializable{
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	private List<RequestVO> requestVOs = new ArrayList<RequestVO>();
     private List<RequestVO> confirmedRequests = new ArrayList<RequestVO>();
     private RequestVO selectedRequestVO;
         

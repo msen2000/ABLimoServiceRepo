@@ -5,18 +5,37 @@
 	xmlns:ui="http://java.sun.com/jsf/facelets"
 	xmlns:h="http://java.sun.com/jsf/html"
 	xmlns:f="http://java.sun.com/jsf/core">
-
-<ui:composition template="/WEB-INF/templates/BasicTemplate.xhtml">	
-	<ui:define name="content">
-	  <h:form>
-            <h:panelGrid columns="2">
-                <h:outputText value="Name"></h:outputText>
-                <h:inputText value="#{LoginBean.name}"></h:inputText>
-                <h:outputText value="Password"></h:outputText>
-                <h:inputSecret value="#{LoginBean.password}"></h:inputSecret>
-            </h:panelGrid>
-            <h:commandButton value="Login" action="login"></h:commandButton>
-        </h:form>
-	</ui:define>
-</ui:composition>
+	
+	<ui:composition template="/WEB-INF/templates/BasicTemplate.xhtml">	
+		<ui:define name="content">
+		<div id="content" data-role="content">
+			<div class="content-primary">      
+	       		<h:panelGroup layout="block">
+		            <hr/>      
+		            <h3 style="text-align:middle;">Admin login</h3>
+		            <h:outputText  value="#{LoginBean.errorMessage}" style="color:Red;"/>
+		            <h:panelGroup layout="block" style="height:10px;"/>
+		            <h:form style="text-align:center;">
+			            <table style="text-align:center;">
+			                <tr>
+			                    <td><h:outputText value="Enter Login ID: " /></td>
+			                    <td><h:inputText id="loginname"  value="#{LoginBean.loginname}" /></td>
+			                </tr>              
+			                <tr>
+			                    <td><h:outputText value="Enter Password: " /></td>
+			                    <td><h:inputSecret id="password" value="#{LoginBean.password}" />
+			                </td>
+			                </tr>
+			                <tr>
+			                    <td>&nbsp;</td>
+			                    <td><h:commandButton value="Login" action="#{LoginBean.CheckValidUser}"/>
+			                </td>
+			                </tr>
+			            </table>
+		         	</h:form>
+	      		</h:panelGroup>
+	      	</div><!-- /primary-content -->
+	      </div><!-- /content -->
+      </ui:define>
+	</ui:composition>
 </html>

@@ -1,10 +1,16 @@
 package org.sen.view.bean;
 
+import java.io.Serializable;
+
 import org.sen.limo.domain.Request;
 import org.sen.limo.model.RequestDAO;
 
-public class RequestRideBean {
-    private RequestVO requestVO = new RequestVO();
+public class RequestRideBean  implements Serializable{
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	private RequestVO requestVO = new RequestVO();
     private String requestConfNumber;
     public RequestRideBean() {
         super();
